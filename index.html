@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/images/logo.png">
+    <title>Divine Providence Academy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<script>
+    document.querySelectorAll('.features li').forEach(item => {
+        item.addEventListener('mouseover', function () {
+            document.getElementById('feature-text').textContent = this.getAttribute('data-info');
+        });
+    
+        item.addEventListener('mouseleave', function () {
+            document.getElementById('feature-text').textContent = "Hover over a feature to learn more.";
+        });
+    });
+    </script>
+    
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- <div class="logo">Divine Providence Academy</div> -->
+        <div class="logo">
+            <img src="public/images/logo.png" alt="School Logo" id="school-logo">
+            Divine Providence Academy
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Divine Providence Academy</h1>
+            <p>WISDOM IS STRENGTH</p>
+            <a href="#gallery" class="cta-button">Explore Our World <i class="fas fa-rocket animated-icon"></i></a>
+        </div>
+    </section>
+
+   <!-- About Section -->
+<section id="about" class="about">
+    <h2>About Our School</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>We follow the Competency-Based Curriculum (CBC), ensuring your child receives a well-rounded and modern education tailored to their needs. Our students, driven by creativity, determination, and hard work, receive great support.</p>
+            <ul class="features">
+                <li data-info="A safe, nurturing, and stimulating environment for infants and toddlers."><i class="fas fa-baby"></i> Daycare Centre</li>
+                <li data-info="A structured and engaging foundation for young learners in their early years of education."><i class="fas fa-chalkboard"></i> Pre-primary 1 & 2</li>
+                <li data-info="Providing a solid academic base for primary learners with a focus on holistic development."><i class="fas fa-chalkboard-user"></i> Primary Grades 1, 2, & 3</li>
+                <li data-info="A well-equipped swimming program that enhances physical development and confidence."><i class="fas fa-person-swimming"></i> Swimming</li>
+            </ul>
+            <div class="feature-description">
+                <p id="feature-text">Hover over a feature to learn more.</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>Our Mission</h3>
+                <p>To provide an all-inclusive learning environment that addresses the Spiritual, Physical, and Social needs of the pupils by providing holistic education that produces empowered citizens.</p>
+            </div>
+            <div class="stat-item">
+                <h3>Our Vision</h3>
+                <p>To be the leading Centre of Excellence in Narok County that creates opportunities for Individuals to realize their Maximum potential.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Section -->
+<section id="facilities" class="facilities">
+    <h2>Our Facilities & Improvements</h2>
+    <div class="facilities-content">
+        <div class="facilities-text">
+            <p>We have continuously improved our school environment to ensure a comfortable and well-equipped learning space for all our students.</p>
+            <ul class="features">
+                <li data-info="Modern electrical system that includes Solar Generation.">
+                    <i class="fas fa-bolt"></i> Reliable Power
+                </li>
+                <li data-info="Equipped with modern whiteboards.">
+                    <i class="fas fa-chalkboard"></i> White boards
+                </li>
+                <li data-info="Our water storage capacity creates safe and sufficient water access for our students.">
+                    <i class="fas fa-faucet"></i> Sufficient Water Supply
+                </li>
+                <li data-info="Our play area ensures a safe, fun, and engaging space for kids to explore and grow.">
+                    <i class="fas fa-shoe-prints"></i> Spacious Play Area
+                </li>
+                <li data-info="Our certified ECDE teachers are highly trained professionals, passionate about early childhood education, ensuring quality care and learning for your child.">
+                    <i class="fas fa-user-tie"></i> Dedicated Teaching Staff
+                </li>
+            </ul>
+            <div class="feature-description">
+                <p id="facility-text">Hover over a facility to learn more.</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>Our Commitment</h3>
+                <p>We continuously invest in our school infrastructure to provide the best learning experience for our pupils.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <h2>Our Adventure Gallery</h2>
+    <div class="gallery-scroll-container">
+        <div class="gallery-container">
+
+             <!-- Graduation Category -->
+             <div class="gallery-category">
+                <h3>Graduation</h3>
+                <div class="gallery-images">
+                    <img src="public/images/pic26.jpg" alt="Graduation 1">
+                    <img src="public/images/pic18.jpg" alt="Graduation 2">
+                    <img src="public/images/pic19.jpg" alt="Graduation 3">
+                </div>
+            </div>
+
+            <!-- Learning Adventures Category -->
+            <div class="gallery-category">
+                <h3>Learning Adventures</h3>
+                <div class="gallery-images">
+                    <img src="public/images/pic20.jpg" alt="Learning 1">
+                    <img src="public/images/pic21.jpg" alt="Learning 2">
+                    <img src="public/images/pic22.jpg" alt="Learning 3">
+                </div>
+            </div>
+
+            <!-- Lunchtime Category -->
+            <div class="gallery-category">
+                <h3>Lunchtime</h3>
+                <div class="gallery-images">
+                    <img src="public/images/pic23.jpg" alt="Lunchtime 1">
+                    <img src="public/images/pic24.jpg" alt="Lunchtime 2">
+                    <img src="public/images/pic27.jpg" alt="Lunchtime 3">
+                </div>
+            </div>
+
+            <!-- Playtime Category -->
+            <div class="gallery-category">
+                <h3>Playtime Fun</h3>
+                <div class="gallery-images">
+                    <img src="public/images/pic30.jpg" alt="Playtime 1">
+                    <img src="public/images/pic29.jpg" alt="Playtime 2">
+                    <img src="public/images/pic28.jpg" alt="Playtime 3">
+                </div>
+            </div>
+
+            <!-- swimming Category -->
+            <div class="gallery-category">
+                <h3>Swimming</h3>
+                <div class="gallery-images">
+                    <img src="public/images/pic2.jpg" alt="Swimming 1">
+                    <img src="public/images/pic3.jpg" alt="Swimming 2">
+                    <img src="public/images/pic4.jpg" alt="Swimming 3">
+                </div>
+            </div>
+
+            <!-- Special Moments Category -->
+            <div class="gallery-category">
+                <h3>Special Moments</h3>
+                <div class="gallery-images">
+                    <img src="public/images/pic17.jpg" alt="Special 1">
+                    <img src="public/images/pic15.jpg" alt="Special 2">
+                    <img src="public/images/pic16.jpg" alt="Special 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Amenities Section -->
+<section id="amenities" class="amenities">
+    <h2>Additional Amenities</h2>
+    <div class="amenities-content">
+        <div class="amenity-item">
+            <h3><i class="fas fa-bus"></i> Transport</h3>
+            <p>Transportation is available at a varying monthly cost, depending on local residence.</p>
+        </div>
+        <div class="amenity-item">
+            <h3><i class="fas fa-utensils"></i> Meals</h3>
+            <p>The school provides daytime nutrition: whole meal porridge at 10:30 AM and lunch at 12:30 PM.</p>
+        </div>
+        <div class="amenity-item attention">
+            <h3><i class="fas fa-exclamation-circle"></i> Attention</h3>
+            <p><strong>Nutritional sponsorship</strong> is available for families in need. Please reach out for more information.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Say Hello!</h2>
+        <div class="contact-container">
+            <form id="contact-form" action="https://formsubmit.co/divineprovidenceacademy@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>P.O. Box 520-20500, Narok, Kenya</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+254 722 638 942</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>divineprovidenceacademy@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Divine Providence Academy</h3>
+                <p>Wisdom is strength!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- <div class="footer-section">
+                <h3>Follow Our Adventures</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Divine Providence Academy. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
