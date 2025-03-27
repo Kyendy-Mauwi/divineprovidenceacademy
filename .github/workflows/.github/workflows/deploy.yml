@@ -1,0 +1,19 @@
+name: Deploy to Surge
+
+on:
+  push:
+    branches:
+      - main  # Change to the branch you want to deploy from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Surge
+        run: npm install -g surge
+
+      - name: Deploy to Surge
+        run: surge ./ divineprovidenceacademy.surge.sh --token ${{ secrets.SURGE_TOKEN }}
